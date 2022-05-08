@@ -1,5 +1,10 @@
 /* HEADER */
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
 body{
     height: 100%;
     margin: 0;
@@ -8,21 +13,21 @@ body{
 .header{
     padding: 10px;
     height: 50px;
-    width: 100%;
+    width: 99%;
     display: flex;
     align-items: center;
-    color: #FFC72C;
     justify-content:space-between;
     background-color: #DA291C;
 }
 
 .header .nav-items a{
-    margin-right: 20px;
+    margin-right: 10px;
     
 }
 
 .header a{
     text-decoration: none;
+    font-weight: bold;
     color: white;
 }
 
@@ -36,12 +41,16 @@ body{
     font-size: 20px;
 }
 
+.header .nav-title a img{
+    width: 100px;
+    height: 70px;
+}
+
 /* FOOTER */
 .footer{
     padding: 10px;
     height: 50px;
     width: 99%;
-    position: absolute;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -50,10 +59,9 @@ body{
     background-color: #DA291C;
 }
 
-.footer a{
-    text-decoration: none;
-    color: #FFC72C;
-    
+.footer a img{
+    width: 50px;
+    height: 50px;
 }
 
 /* SLIDER */
@@ -101,4 +109,44 @@ body{
 
 .slider .dot-container .slideshow-dot:hover, .slider .dot-container .slideshow-dot.active {
     background-color: white;
+}
+
+/* BODY */
+
+.body {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.body .body-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.body .body-container .left-body-container img{
+    width: 40vw;
+    height: 20vw;
+}
+
+.body .body-container .right-body-container img{
+    width: 40vw;
+    height: 20vw;
+}
+
+.body .body-container .right-body-container {
+    margin-left: 5vw;
+}
+
+.body .body-container .upper-body-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body .body-container .lower-body-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
