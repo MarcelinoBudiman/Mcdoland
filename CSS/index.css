@@ -128,11 +128,13 @@ body{
 .body .body-container .left-body-container img{
     width: 40vw;
     height: 20vw;
+    border-radius: 2%;
 }
 
 .body .body-container .right-body-container img{
     width: 40vw;
     height: 20vw;
+    border-radius: 2%;
 }
 
 .body .body-container .right-body-container {

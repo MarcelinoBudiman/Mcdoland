@@ -121,5 +121,6 @@ body{
 .grid-container .grid-item .flex-container img{
     width: 25vw;
     height: 13vw;
+    border-radius: 2%;
     margin-bottom: -10px;
 }
