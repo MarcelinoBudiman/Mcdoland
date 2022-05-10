@@ -8,6 +8,7 @@ html {
 body{
     height: 100%;
     margin: 0;
+    position: relative;
 }
 
 .header{
@@ -168,11 +169,19 @@ body{
 @media (max-width: 400px) {
 
     /* RESPONSIVE SLIDER */
+    .slider{
+        position: relative;
+    }
+
+    .slider .slider-container{
+        position: relative;
+    }
 
     .slider .slider-container .slide {
+        position: relative;
         width: 100%;
-        min-height: 250px;
-        max-height: 250px;
+        min-height: 200px;
+        max-height: 200px;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
@@ -194,7 +203,8 @@ body{
         position: absolute;
         top: 70px;
         flex-direction: column;
-        width: 420px;
+        width: 100%;
+        z-index: 9999;
     }
 
     .header .nav-items a {
