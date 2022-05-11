@@ -124,6 +124,13 @@ body{
     transition: 0.5s;
 }
 
+.form-input{
+    border-radius: 10px;
+    padding: 7px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+
 /* RESPONSIVE GRID */
 @media (max-width: 400px) {
     .grid-container {
