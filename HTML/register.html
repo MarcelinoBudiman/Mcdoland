@@ -43,24 +43,29 @@
 
         <div class="form-container">
             <form action="../HTML/register.html">
+
                 <div class="form">
                     <h5 class="form-lbl">Name</h5>
                     <input type="text" class="form-input" placeholder="Name">
+                    <p>Error message</p>
                 </div>
 
                 <div class="form">
                     <h5 class="form-lbl">Phone Number</h5>
                     <input type="text" class="form-input" placeholder="08xxxxxxxxx">
+                    <p>Error message</p>
                 </div>
 
                 <div class="form">
                     <h5 class="form-lbl">Email Address</h5>
                     <input type="email" class="form-input" placeholder="example@ex.com">
+                    <p>Error message</p>
                 </div>
                 
-                <div class="form">
+                <div class="form" data-error="">
                     <h5 class="form-lbl">Address</h5>
                     <textarea name="address" class="form-input" cols="30" rows="10"></textarea>
+                    <small>Error message</small>
                 </div>
                 
                 <div class="form">
@@ -69,21 +74,24 @@
                     <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" class="form-input" value="Female">
                     <label for="female">Female</label>
+                    <p>Error message</p>
                 </div>
 
                 <div class="form">
-                    <h5 class="form-lbl">Payment Method</h5>
+                    <h5 class="form-lbl">Payment</h5>
                     <input type="radio" id="cash" name="payment" class="form-input" value="Cash">
                     <label for="cash">Cash</label>
                     <input type="radio" id="qris" name="payment" class="form-input" value="Qris">
                     <label for="qris">Qris</label>
                     <input type="radio" id="card" name="payment" class="form-input" value="Card">
                     <label for="card">Debit / Credit Card</label>
+                    <p>Error message</p>
                 </div>
 
                 <div class="form">
                     <input type="checkbox" id="checkbox" class="form-input">
                     <label for="checkbox">I agree to the Terms and Conditions</label>
+                    <em>Error message</em>
                 </div>
 
                 <button type="submit">Submit</button>

@@ -88,14 +88,17 @@ body{
 .body .form-container{
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
     align-self: center;
     margin-left: 5vw;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     background-color: #DA291C;
-
 }
 
 .body .form-container .form{
     display: flex;
+    margin-top: 10px;
+    position: relative;
     padding-left: 3vw;
     padding-right: 3vw;
     align-items: center;
@@ -108,7 +111,7 @@ body{
 
 .body .form-container button {
     margin-top: 2vw;
-    margin-left: 13vw;
+    margin-left: 10vw;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 1vw;
@@ -130,21 +133,61 @@ body{
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
 
+.form p{
+    display: none;
+    position: absolute;
+    font-style: italic;
+    top: 28px;
+}
 
-/* RESPONSIVE GRID */
+.form small{
+    display: none;
+    position: absolute;
+    font-style: italic;
+    top: 170px;
+}
+
+.form em{
+    display: none;
+    position: absolute;
+    top: 20px;
+}
+
+
+/* RESPONSIVE */
 @media (max-width: 400px) {
-    .grid-container {
-        grid-template-columns: repeat(1,1fr);
-        align-self: center;
+
+    .body .banner-container{
+        display: none;
+        position: relative;
     }
 
-    .grid-container .grid-item .flex-container img{
-        width: 80vw;
-        height: 40vw;
+    .body .form-container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
     }
 
-    .grid-container .grid-item .flex-container p{
-        margin-bottom: 5px;
+    .body .form-container .form{
+        position: relative;
+    }
+
+    .body .form-container button{
+       margin-left: 120px;
+       margin-bottom: 10px;
+       margin-top: 30px;
+    }
+
+    .form p{
+        top: 28px;
+    }
+    
+    .form small{
+        top: 170px;
+    }
+    
+    .form em{
+        top: 25px;
     }
 
     /* RESPONSIVE NAVBAR */
@@ -166,6 +209,7 @@ body{
         top: 70px;
         flex-direction: column;
         width: 420px;
+        z-index: 9999;
     }
 
     .header .nav-items a {
