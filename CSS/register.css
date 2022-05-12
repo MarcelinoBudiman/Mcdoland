@@ -134,6 +134,23 @@ body{
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
 
+.form.error .form-input{
+    border-color: red;
+    border-style: dashed;
+}
+
+.form.error p{
+    display: block;
+}
+
+.form.error small{
+    display: block;
+}
+
+.form.error em{
+    display: block;
+}
+
 .form p{
     display: none;
     position: absolute;

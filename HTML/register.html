@@ -42,29 +42,29 @@
         </div>
 
         <div class="form-container">
-            <form action="../HTML/register.html">
+            <form class="form-register" id="form-register" action="../HTML/index.html">
 
                 <div class="form">
                     <h5 class="form-lbl">Name</h5>
-                    <input type="text" class="form-input" placeholder="Name">
+                    <input type="text" id="name" class="form-input" placeholder="Name">
                     <p>Error message</p>
                 </div>
 
                 <div class="form">
                     <h5 class="form-lbl">Phone Number</h5>
-                    <input type="text" class="form-input" placeholder="08xxxxxxxxx">
+                    <input type="text" id="phone" class="form-input" placeholder="08xxxxxxxxx">
                     <p>Error message</p>
                 </div>
 
                 <div class="form">
                     <h5 class="form-lbl">Email Address</h5>
-                    <input type="email" class="form-input" placeholder="example@ex.com">
+                    <input type="email" id="email" class="form-input" placeholder="example@ex.com">
                     <p>Error message</p>
                 </div>
                 
                 <div class="form" data-error="">
                     <h5 class="form-lbl">Address</h5>
-                    <textarea name="address" class="form-input" cols="30" rows="10"></textarea>
+                    <textarea name="address" id="address" class="form-input" cols="30" rows="10"></textarea>
                     <small>Error message</small>
                 </div>
                 
@@ -112,4 +112,5 @@
     </div>
 
 </body>
+<script src="../JS/form.js"></script>
 </html>
